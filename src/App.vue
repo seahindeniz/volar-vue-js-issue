@@ -5,10 +5,9 @@
 
 <script>
 import { mapActions, mapState } from 'pinia';
-import { defineComponent } from 'vue'
 import useCommonStore from './store/common';
 
-export default defineComponent({
+export default {
   name: 'App',
 
   data() {
@@ -31,7 +30,7 @@ export default defineComponent({
       this.setVisibility(!this.visibility)
     },
   },
-});
+}
 </script>
 
 <style scoped>
